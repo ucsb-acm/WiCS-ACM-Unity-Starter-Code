@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Obstacle : MonoBehaviour {
+public class Obstacle_down : MonoBehaviour {
     // Movement Speed (0 means don't move)
     public float speed = 0;
     public int counter = 0;
-    //public GameObject pipeDown;
+        //public GameObject pipeDown;
     private Bird bird;
     
     // Switch Movement Direction every x seconds
@@ -19,16 +19,19 @@ public class Obstacle : MonoBehaviour {
         InvokeRepeating("Switch", 0, switchTime);
 
         bird = FindObjectOfType<Bird>();
+
     }
 
     void Update()
     {
-        Debug.Log(bird.transform.position.x - this.transform.position.x);
+        //Debug.Log(bird.transform.position.x - this.transform.position.x);
 
         if(bird.transform.position.x > this.transform.position.x)
         {
-            Instantiate(this, new Vector2(bird.transform.position.x + 4, this.transform.position.y), this.transform.rotation);
-            Destroy(gameObject);
+            bird.updateText();
+            Instantiate(this, new Vector2(bird.transform.position.x + 4, this.transform.position.y), this.transform.rotation)
+                    .name = ("new downpipe" + bird.transform.position.x + 4);
+            Destroy(this);
         }
      
         

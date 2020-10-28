@@ -13,26 +13,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 0001-01-01T00:00:00.000+00:00
-  initializedAtString: 0001-01-01T00:00:00.000+00:00
+  lastUpdatedAtString: 2020-10-28T04:17:17.561-07:00
+  initializedAtString: 2020-10-28T04:17:17.561-07:00
   currentGitRemote:
-    name: 
-    url: 
+    name: origin
+    url: https://github.com/ucsb-acm/WiCS1.git
     login: 
     user: 
     host: 
     function: 0
     token: 
   currentGitBranch:
-    name: 
+    name: master
     tracking: 
   currentConfigBranch:
-    name: 
+    name: master
     remote:
       name: 
       url: 
     trackingBranch: 
   currentConfigRemote:
-    name: 
-    url: 
+    name: origin
+    url: https://github.com/ucsb-acm/WiCS1.git
   currentHead: 
